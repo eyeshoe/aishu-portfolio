@@ -9,11 +9,14 @@ html {
 }
 
 body {
-    font-family: 'Crimson Pro', serif;
-    color: #2D2D34;
-    background-color: #fff0f3;
-    background-image: radial-gradient(circle, #dfafb0 1px, transparent 1px);
-    background-size: 25px 25px;
+    font-family: Georgia, serif;
+    color: #251f1f;
+    background-color: #fff8f9;
+    background-image: 
+        radial-gradient(circle at center, transparent 0%, transparent 40%, rgba(232, 232, 232, 0.3) 70%, rgba(232, 232, 232, 0.8) 100%),
+        linear-gradient(#e8e8e8 1px, transparent 1px),
+        linear-gradient(90deg, #e8e8e8 1px, transparent 1px);
+    background-size: 100% 100%, 25px 25px, 25px 25px;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -23,13 +26,13 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 240, 243, 0.95);
+    background: rgba(255, 248, 249, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
     transition: all 0.3s ease;
-    border-bottom: 1px solid rgba(223, 175, 176, 0.2);
-    box-shadow: 0 2px 20px rgba(169, 98, 102, 0.05);
+    border-bottom: 1px solid rgba(208, 206, 207, 0.2);
+    box-shadow: 0 2px 20px rgba(144, 38, 41, 0.05);
 }
 
 .nav-container {
@@ -42,16 +45,16 @@ body {
 }
 
 .nav-logo {
-    font-family: 'Gentium Plus', serif;
+    font-family: Georgia, serif;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: bold;
     text-decoration: none;
-    color: #2D2D34;
+    color: #251f1f;
     transition: color 0.3s ease;
 }
 
 .nav-logo:hover {
-    color: #dfafb0;
+    color: #902629;
 }
 
 .nav-menu {
@@ -61,7 +64,7 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #2D2D34;
+    color: #251f1f;
     font-weight: 400;
     transition: all 0.3s ease;
     position: relative;
@@ -74,7 +77,7 @@ body {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #dfafb0;
+    background-color: #902629;
     transition: width 0.3s ease;
 }
 
@@ -83,7 +86,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #dfafb0;
+    color: #902629;
 }
 
 /* Container */
@@ -97,7 +100,7 @@ body {
 .hero-about {
     min-height: 100vh;
     padding: 6rem 0;
-    background: linear-gradient(135deg, #fff0f3 0%, rgba(223, 175, 176, 0.1) 100%);
+    background: linear-gradient(135deg, #fff8f9 0%, rgba(255, 248, 249, 0.1) 100%);
 }
 
 .hero-about-content {
@@ -111,11 +114,11 @@ body {
 }
 
 .hero-title {
-    font-family: 'Gentium Plus', serif;
-    font-weight: 700;
+    font-family: Georgia, serif;
+    font-weight: bold;
     font-size: 4rem;
     margin-bottom: 2rem;
-    color: #2D2D34;
+    color: #251f1f;
     animation: fadeInUp 1s ease-out;
 }
 
@@ -132,22 +135,23 @@ body {
 }
 
 .hero-contact-link {
-    color: #2D2D34;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     padding: 0.5rem 1rem;
-    border: 1px solid rgba(223, 175, 176, 0.3);
+    border: 1px solid #902629;
     border-radius: 20px;
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.5);
+    background: #902629;
     backdrop-filter: blur(10px);
 }
 
 .hero-contact-link:hover {
-    background: #dfafb0;
+    background: #b7484b;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(169, 98, 102, 0.2);
+    box-shadow: 0 5px 15px rgba(144, 38, 41, 0.2);
+    border-color: #b7484b;
 }
 
 /* Floating Shapes */
@@ -174,11 +178,11 @@ section {
 }
 
 .section-title {
-    font-family: 'Gentium Plus', serif;
+    font-family: Georgia, serif;
     font-size: 2.5rem;
     margin-bottom: 3rem;
     text-align: center;
-    color: #2D2D34;
+    color: #251f1f;
     position: relative;
 }
 
@@ -187,7 +191,7 @@ section {
     position: absolute;
     width: 60px;
     height: 3px;
-    background: #dfafb0;
+    background: #902629;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -221,7 +225,7 @@ section {
     width: 100%;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(169, 98, 102, 0.15);
+    box-shadow: 0 8px 25px rgba(144, 38, 41, 0.15);
     transition: transform 0.3s ease;
 }
 
@@ -236,63 +240,66 @@ section {
 }
 
 .currently h3 {
-    font-family: 'Gentium Plus', serif;
+    font-family: Georgia, serif;
     font-size: 1.8rem;
     margin-bottom: 3rem;
-    color: #2D2D34;
+    color: #251f1f;
 }
 
 .currently-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    max-width: 1000px;
+    gap: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .currently-section {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
 }
 
 .note {
-    background: #fff9fa;
-    padding: 1.5rem;
+    background: #FFFFFF;
+    padding: 2rem;
     border-radius: 5px;
     box-shadow: 
-        0 4px 8px rgba(0, 0, 0, 0.15),
-        0 2px 4px rgba(0, 0, 0, 0.1),
+        0 4px 8px rgba(0, 0, 0, 0.05),
+        0 2px 4px rgba(0, 0, 0, 0.03),
         inset 0 1px 0 rgba(255, 255, 255, 0.8);
     position: relative;
-    border: 1px solid rgba(223, 175, 176, 0.3);
-    font-family: 'Crimson Pro', serif;
+    border: 1px solid #fff8f9;
+    font-family: Georgia, serif;
+    min-width: 320px;
+    backdrop-filter: blur(10px);
+}
+
+.note-2 {
+    min-width: 380px;
+    transform: rotate(0.5deg);
+    z-index: 1;
 }
 
 
 .note-1 {
-    transform: rotate(-2deg);
     z-index: 2;
 }
 
-.note-2 {
-    transform: rotate(1deg);
-    z-index: 1;
-}
 
 .note h4 {
-    font-family: 'Gentium Plus', serif;
+    font-family: Georgia, serif;
     font-size: 1.1rem;
     margin-bottom: 0.8rem;
-    color: #2D2D34;
+    color: #251f1f;
     border-bottom: 1px solid rgba(45, 45, 52, 0.2);
     padding-bottom: 0.5rem;
 }
 
 .note p {
     font-size: 1rem;
-    color: #2D2D34;
+    color: #251f1f;
     margin: 0;
     line-height: 1.4;
 }
@@ -321,7 +328,7 @@ section {
     font-size: 1.1rem;
     font-weight: 500;
     margin: 0 0 0.3rem 0;
-    color: #2D2D34;
+    color: #251f1f;
 }
 
 .book-author {
@@ -332,7 +339,7 @@ section {
 }
 
 .book-cover {
-    width: 80px;
+    width: 120px;
     height: auto;
     border-radius: 4px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
@@ -340,7 +347,7 @@ section {
 }
 
 .polaroid {
-    background: #fff;
+    background: #FFFFFF;
     padding: 12px 12px 45px 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -367,12 +374,11 @@ section {
 }
 
 .polaroid-bookstore {
-    width: 280px;
-    transform: rotate(3deg);
+    width: 500px;
 }
 
 .polaroid-bookstore img {
-    height: 200px;
+    height: 450px;
 }
 
 
@@ -392,14 +398,14 @@ section {
 }
 
 .project-card {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     padding: 2rem;
     border-radius: 15px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(223, 175, 176, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 248, 249, 0.5);
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: 0 8px 25px rgba(169, 98, 102, 0.08);
+    box-shadow: 0 8px 25px rgba(144, 38, 41, 0.05);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -407,16 +413,16 @@ section {
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(169, 98, 102, 0.15);
+    box-shadow: 0 20px 40px rgba(144, 38, 41, 0.15);
     background: rgba(255, 255, 255, 0.8);
-    border-color: #a96266;
+    border-color: #c44a80;
 }
 
 .project-card h3 {
-    font-family: 'Gentium Plus', serif;
+    font-family: Georgia, serif;
     font-size: 1.4rem;
     margin-bottom: 1rem;
-    color: #2D2D34;
+    color: #251f1f;
 }
 
 .project-card p {
@@ -440,19 +446,19 @@ section {
     display: inline-block;
     margin-right: 1rem;
     padding: 0.5rem 1rem;
-    background: #a96266;
+    background: #902629;
     color: white;
     text-decoration: none;
     border-radius: 25px;
     font-size: 0.9rem;
     transition: all 0.3s ease;
-    box-shadow: 0 3px 10px rgba(169, 98, 102, 0.2);
+    box-shadow: 0 3px 10px rgba(144, 38, 41, 0.2);
 }
 
 .project-link:hover {
-    background: #2D2D34;
+    background: #b7484b;
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(45, 45, 52, 0.3);
+    box-shadow: 0 6px 20px rgba(183, 72, 75, 0.3);
 }
 
 .project-tags {
@@ -464,20 +470,20 @@ section {
 }
 
 .tag {
-    background: rgba(223, 175, 176, 0.25);
-    color: #2D2D34;
+    background: #fff8f9;
+    color: #251f1f;
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid rgba(223, 175, 176, 0.3);
+    border: 1px solid rgba(208, 206, 207, 0.3);
 }
 
 /* Writing Section */
 .writing {
-    background: rgba(223, 175, 176, 0.08);
-    border-top: 1px solid rgba(223, 175, 176, 0.1);
-    border-bottom: 1px solid rgba(223, 175, 176, 0.1);
+    background: transparent;
+    border-top: 1px solid rgba(208, 206, 207, 0.1);
+    border-bottom: 1px solid rgba(208, 206, 207, 0.1);
 }
 
 .writing-list {
@@ -489,28 +495,29 @@ section {
     display: block;
     padding: 2rem;
     margin-bottom: 1.5rem;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     text-decoration: none;
-    color: #2D2D34;
+    color: #251f1f;
     transition: all 0.3s ease;
     border-left: 4px solid transparent;
-    border: 1px solid rgba(223, 175, 176, 0.15);
-    box-shadow: 0 4px 15px rgba(169, 98, 102, 0.05);
+    border: 1px solid rgba(255, 248, 249, 0.5);
+    box-shadow: 0 4px 15px rgba(144, 38, 41, 0.03);
+    backdrop-filter: blur(15px);
 }
 
 .writing-item:hover {
     background: rgba(255, 255, 255, 0.8);
     transform: translateX(12px);
-    border-left-color: #a96266;
-    box-shadow: 0 8px 25px rgba(169, 98, 102, 0.12);
+    border-left-color: #c44a80;
+    box-shadow: 0 8px 25px rgba(144, 38, 41, 0.12);
 }
 
 .writing-item h3 {
-    font-family: 'Gentium Plus', serif;
+    font-family: Georgia, serif;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: #2D2D34;
+    color: #251f1f;
 }
 
 .writing-item p {
@@ -530,8 +537,8 @@ section {
     border-radius: 10px;
     overflow: hidden;
     transition: all 0.3s ease;
-    border: 2px solid rgba(223, 175, 176, 0.2);
-    box-shadow: 0 4px 15px rgba(169, 98, 102, 0.08);
+    border: 1px solid rgba(255, 248, 249, 0.5);
+    box-shadow: 0 4px 15px rgba(144, 38, 41, 0.08);
 }
 
 .photo-item img {
@@ -543,8 +550,8 @@ section {
 
 .photo-item:hover {
     transform: scale(1.05);
-    border-color: #a96266;
-    box-shadow: 0 8px 25px rgba(169, 98, 102, 0.15);
+    border-color: #c44a80;
+    box-shadow: 0 8px 25px rgba(144, 38, 41, 0.15);
 }
 
 .photo-item:hover img {
@@ -598,7 +605,7 @@ section {
     
     .currently-grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2rem;
     }
     
     .currently-section {
@@ -613,10 +620,28 @@ section {
     
     .book-cover {
         margin-top: 1rem;
+        width: 100px;
+    }
+    
+    .note {
+        min-width: unset;
+        padding: 1.5rem;
+    }
+    
+    .note-2 {
+        min-width: unset;
     }
     
     .polaroid {
         width: 180px;
+    }
+    
+    .polaroid-bookstore {
+        width: 300px !important;
+    }
+    
+    .polaroid-bookstore img {
+        height: 220px !important;
     }
     
     .currently {
